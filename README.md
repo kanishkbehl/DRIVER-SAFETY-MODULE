@@ -1,6 +1,6 @@
 # 👁️‍🗨️ Driver Safety Detection System Using Raspberry Pi 5
 
-A real-time AI-powered Driver Monitoring System (DMS) developed on **Raspberry Pi 5**, this upgraded safety solution combines **YOLOv8 object detection** and **MediaPipe FaceMesh** to analyze critical driver behaviors. It assesses fatigue, distraction, and unsafe activities like mobile phone usage, eye closure, yawning, and abnormal head positions to alert the driver instantly and ensure road safety.
+A real-time AI-powered Driver Safety System developed on **Raspberry Pi 5**, this upgraded safety solution combines **YOLOv8 object detection** and **MediaPipe FaceMesh** to analyze critical driver behaviors. It assesses fatigue, distraction, and unsafe activities like mobile phone usage, eye closure, yawning, and abnormal head positions to alert the driver instantly and ensure road safety.
 
 ---
 
@@ -45,7 +45,6 @@ A real-time AI-powered Driver Monitoring System (DMS) developed on **Raspberry P
 ### 🔌 Hardware:
 
 - Raspberry Pi 5
-- USB Camera (Index 1 for AVFoundation backend on macOS)
 - LED & Buzzer (for alerts)
 - Breadboard, jumper wires, resistors (for GPIO setup)
 
@@ -79,12 +78,3 @@ A real-time AI-powered Driver Monitoring System (DMS) developed on **Raspberry P
    - ≤2 → Low
 5. **Real-Time Output**:
    - Live camera feed with overlaid status (YES/NO), head orientation, fatigue score, and danger level
-
----
-
-## 🎥 Camera Configuration
-
-The system opens the camera using index `1` with AVFoundation backend on macOS:
-
-```python
-cap = cv2.VideoCapture(1, cv2.CAP_AVFOUNDATION)
