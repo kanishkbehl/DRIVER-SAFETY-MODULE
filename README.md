@@ -30,7 +30,7 @@ A real-time AI-powered Driver Safety System developed on **Raspberry Pi 5**, thi
 
 ## 🧠 Features
 
-- Real-time video processing from external USB camera (camera index 1)
+- Real-time video processing from external USB camera
 - Fatigue scoring logic for driver awareness tracking
 - Landmark-based head orientation calculation
 - Real-time graphical feedback and status overlay
